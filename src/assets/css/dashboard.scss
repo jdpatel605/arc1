@@ -1,0 +1,385 @@
+.content-title {
+  padding-right: 0;
+}
+
+.dashboard {
+  h4.title {
+    font-size: 20px;
+    color: #FFF;
+  }
+
+  .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      font-size: 20px;
+      color: #FFF;
+      line-height: 1.4;
+      letter-spacing: 0.83px;
+    }
+  }
+
+  .dashboard-row {
+    margin: 0 -10px;
+    height: auto;
+    justify-content: space-between;
+
+    .col-md-4 {
+      padding: 0 10px;
+      margin-bottom: 12px;
+    }
+
+    .dashboard-box {
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28), 0 1px 2px 0 rgba(0, 0, 0, 0.1), -2px -3px 6px 0 rgba(42, 46, 50, 0.5);
+      background-color: #191C20;
+      max-width: 100%;
+      height: 100%;
+
+      .box-content {
+        display: flex;
+        align-items: baseline;
+        margin-top: 10px;
+
+        .box-content-icon {
+          display: flex;
+
+          a {
+            width: 48px;
+            height: 48px;
+            text-align: center;
+            margin: 6px 21px 6px 10px;
+            padding: 12px 11px 11px 10px;
+            background-color: #18b99a40;
+            border-radius: 50%;
+
+            svg path {
+              fill: #18B99A;
+            }
+          }
+        }
+
+        .box-content-section {
+          h3 {
+            font-size: 44px;
+            color: #FFF;
+            margin-bottom: 5px;
+            line-height: 50px;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .box-content-time {
+          display: flex;
+          align-items: baseline;
+
+          h3 {
+            font-size: 44px;
+            color: #FFF;
+          }
+
+          p {
+            font-size: 24px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.17;
+            letter-spacing: 1px;
+            color: #FFF;
+            margin: 00px 10px;
+          }
+        }
+      }
+
+      .ratio {
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: 0.25px;
+        margin: 0;
+
+        &::before {
+          content: '';
+          font-size: 16px;
+          margin-right: 10px;
+        }
+
+        &.clr-green {
+          color: #18b99a;
+
+          &::before {
+            content: '\1F855';
+          }
+        }
+
+        &.clr-red {
+          color: #fe5444;
+
+          &::before {
+            content: '\1F856';
+          }
+        }
+      }
+    }
+
+    .event-box {
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28), 0 1px 2px 0 rgba(0, 0, 0, 0.1), -2px -3px 6px 0 rgba(42, 46, 50, 0.5);
+      background-color: #191C20;
+    }
+  }
+}
+
+.date-range-box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #191c20;
+  border: none;
+  width: 100%;
+  height: 44px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  padding: 0px 15px 0 15px;
+  outline: none;
+  color: #fff;
+  caret-color: #18b99a;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(36, 36, 36, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.daterangepicker.show-ranges {
+  padding: 5px 15px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28), 0 1px 2px 0 rgba(0, 0, 0, 0.1), -2px -3px 6px 0 rgba(42, 46, 50, 0.5);
+  background-color: #212529;
+  border: none;
+  color: #8b97a2;
+
+  .ranges {
+    margin-top: 0;
+    li {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 19px;
+      letter-spacing: 0.5px;
+      color: #8b97a2;
+      padding: 12px;
+      border-left: #212529 4px solid;
+      border-bottom: #191c20 1px solid;
+      &.active,
+      &:hover {
+        color: #fff;
+        background-color: #454b52;
+        border-left-color: #18b99a;
+      }
+    }
+  }
+
+  &.ltr {
+    .drp-calendar.left,
+    .drp-buttons {
+      border-color: #191c20 !important;
+    }
+  } 
+
+  .calendar-table {
+    background: transparent;
+    border: none;
+
+    table {
+      width: 100%;
+      margin: 0;
+      border-spacing: 0 5px;
+      border-collapse: separate;
+    }
+    
+    tr {
+      position: relative;
+    }
+    th,
+    td {
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 28px;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    th {
+      color: #18b99a;
+      &.month {
+        text-align: left;
+        position: absolute;
+        padding-left: 8px;
+        color: #8b97a2;
+      }
+      &.next.available {
+        position: absolute;
+        right: 0;
+      }
+      &.prev.available {
+        position: absolute;
+        right: 33px;
+      }
+    }
+    td {
+      height: 32px;
+      width: 32px;
+      min-width: 32px;
+      min-height: 32px;
+      max-width: 32px;
+      position: relative;
+      border: none;
+      padding: 0;
+      white-space: normal;
+      border-collapse: collapse;
+      border-spacing: 0;
+      &.available {
+        color: #fff;
+        &:hover {
+          background-color: #18b99a;
+          border-radius: 50%;
+        }
+        &.off {
+          color: #5e7081;
+          background: none;
+          &.start-date,
+          &.end-date {
+            background: transparent;
+            &:before,
+            &:before {
+              display: none;
+            }
+          }
+        }
+        &.start-date {
+          &:before {
+            content: '';
+            background: #18b99a40;
+            width: 10px;
+            height: 32px;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            top: 0;
+          }
+        }
+        &.end-date {
+          background-color: #18b99a;
+          border-radius: 50%;
+          &:hover {
+            background-color: #18b99a;
+            border-radius: 50%;
+          }
+          &:before {
+            content: '';
+            background: #18b99a40;
+            width: 10px;
+            height: 32px;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+      &.active {
+        background-color: #18b99a;
+        border-radius: 50%;
+        &:hover {
+          background-color: #18b99a;
+          border-radius: 50%;
+        }
+      }
+      &.in-range {
+        background-color: #18b99a40;
+        &:first-child {
+          border-bottom-left-radius: 16px;
+          border-top-left-radius: 16px;
+          &:hover {
+            border-bottom-left-radius: 16px;
+            border-top-left-radius: 16px;
+          }
+        }
+        &:last-child {
+          border-bottom-right-radius: 16px;
+          border-top-right-radius: 16px;
+          &:hover {
+            border-bottom-right-radius: 16px;
+            border-top-right-radius: 16px;
+          }
+        }
+        
+      }
+    }
+    
+    .next span,
+    .prev span {
+      border-color: #8b97a2;
+    }
+  }
+  .drp-buttons button.applyBtn {
+    padding: 5px 15px;
+    border-radius: 25px;
+    background-color: #18b99a;
+    min-width: 80px;
+  }
+}
+
+.daterangepicker.show-calendar .calendar-table td.in-range:hover {
+  border-radius: 0;
+}
+
+.daterangepicker.show-calendar .drp-buttons button.cancelBtn {
+  background: #212529;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 25px;
+  min-width: 80px;
+}
+
+.daterangepicker.show-calendar .drp-selected {
+  display: none;
+}
+
+.daterangepicker.show-calendar .ranges li:hover {
+  background: #454b52;
+  color: #fff;
+  border-left-color: #18b99a;
+}
+
+.daterangepicker.show-calendar th.available:hover {
+  background: none;
+  outline: none;
+}
+
+.daterangepicker.show-calendar:before,
+.daterangepicker.show-calendar:after {
+  display: none;
+}
+
+.daterangepicker.show-ranges .calendar-table td.active.weekend.start-date.available::before {
+  opacity: 0;
+}
+.daterangepicker:before, .daterangepicker:after {
+  display: none !important;
+}

@@ -1,0 +1,59 @@
+/*
+ * Higher order react component styling.
+ */
+
+.center {
+  text-align: center;
+}
+
+.text h5 {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.83px;
+  text-align: center;
+}
+
+.modal2-wrapper {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  z-index: 1000;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.modal2 {
+  display: flex;
+  flex-direction: column;
+  //flex: 1;
+  //justify-content: flex-end;
+  height: 246px;
+  width: 552px;
+  padding: 30px;
+  background-color: #191c20;
+  border-radius: 8px;
+}
+
+.modal2-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.modal2-body {
+  color: #8b97a2;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.75px;
+}

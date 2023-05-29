@@ -1,0 +1,83 @@
+
+.btn-info {
+    background-color: #18b99a;
+    color: #fff;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-debug {
+    background-color: purple;
+    color: white;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: white;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-secondary-danger {
+    background-color: transparent;
+    color: #fe5444;
+
+    &:focus,
+    &:hover {
+        color: #c82332;
+    }
+}
+
+.btn-danger {
+    background-color: #fe5444;
+    color: #fff;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-warn {
+    background-color: #f3a218;
+    color: #fff;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-secondary-cancel {
+    box-shadow: 0 2px 7px 0 rgba(36, 36, 36, 0.2);
+    background-color: transparent;
+    color: white;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-secondary-red {
+    box-shadow: 0 2px 7px 0 rgba(36, 36, 36, 0.2);
+    background-color: transparent;
+    color: #fe5444;
+
+    &:focus,
+    &:hover {
+        color: #c82332;
+    }
+}
+

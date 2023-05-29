@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24" style="background:#fff">
+    <defs>
+        <path id="prefix__a" d="M19.256 7.125L12.166 14.215 5.076 7.125 3.75 8.451 12.166 16.866 20.581 8.451z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M0 0H24V24H0z"/>
+        <use fill="#95A1AC" transform="matrix(1 0 0 -1 0 23.991)" xlink:href="#prefix__a"/>
+    </g>
+</svg>
